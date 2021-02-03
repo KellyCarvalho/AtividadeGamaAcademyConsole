@@ -32,15 +32,15 @@ namespace atividade_1.Entidades
                 Efetuada = false;
               
             }
-            else if (ValorRecebido > ValorCompra)
+            else if (ValorRecebido >= ValorCompra)
             {
                 Desconto = (desconto * ValorCompra);
                 ValorFinal = ValorCompra - Desconto;
                 Troco = ValorRecebido - ValorFinal;
                 Efetuada = true;
                 Console.WriteLine("Valor Final com Desconto: " + ValorFinal);
-                Console.WriteLine("Cliente teve um desconto de: " + Desconto);
-                Console.WriteLine($"Este é o troco, mas se o cliente não quiser receber tudo bem :) {Troco} " );
+                Console.WriteLine("Teve um desconto de: " + Desconto);
+                Console.WriteLine($"Este é o troco, mas se  não quiser receber tudo bem :) {Troco} " );
 
             }
 
