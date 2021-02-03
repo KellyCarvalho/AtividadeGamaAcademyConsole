@@ -1,0 +1,13 @@
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\bin\Debug\netcoreapp3.1\atividade 1.exe
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\bin\Debug\netcoreapp3.1\atividade 1.deps.json
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\bin\Debug\netcoreapp3.1\atividade 1.runtimeconfig.json
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\bin\Debug\netcoreapp3.1\atividade 1.runtimeconfig.dev.json
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\bin\Debug\netcoreapp3.1\atividade 1.dll
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\bin\Debug\netcoreapp3.1\atividade 1.pdb
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\obj\Debug\netcoreapp3.1\atividade 1.csprojAssemblyReference.cache
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\obj\Debug\netcoreapp3.1\atividade 1.AssemblyInfoInputs.cache
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\obj\Debug\netcoreapp3.1\atividade 1.AssemblyInfo.cs
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\obj\Debug\netcoreapp3.1\atividade 1.csproj.CoreCompileInputs.cache
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\obj\Debug\netcoreapp3.1\atividade 1.dll
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\obj\Debug\netcoreapp3.1\atividade 1.pdb
+D:\Backup\Estudos\Projetos aspnet\atividade 1\atividade 1\obj\Debug\netcoreapp3.1\atividade 1.genruntimeconfig.cache
