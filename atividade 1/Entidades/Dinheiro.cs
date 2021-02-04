@@ -4,52 +4,53 @@ using System.Text;
 
 namespace atividade_1.Entidades
 {
-    class Dinheiro
-    { public static decimal desconto = 0.10M;
+    class Dinheiro :Pagamento
+    { public static double desconto = 0.10;
         public Guid Id { get; set; }
-        public DateTime data { get; set; }
-        public decimal ValorCompra { get; set; }
-        public decimal ValorRecebido { get; set; }
-        public decimal Troco { get; set; }
-        public decimal Desconto { get; set; }
-        public decimal ValorFinal { get; set; }
-        public bool Efetuada { get; set; }
-        public Dinheiro(decimal valorCompra, decimal valorRecebido)
+        //public DateTime Data { get; set; }
+        //public decimal ValorCompra { get; set; }
+        public double ValorRecebido { get; set; }
+        public double Troco { get; set; }
+        public double Desconto { get; set; }
+        //public decimal ValorFinal { get; set; }
+        //public bool Efetuada { get; set; }
+        public Dinheiro(double valorCompra, double valorRecebido)
         {
-            ValorCompra = valorCompra;
+            Valor = valorCompra;
             ValorRecebido = valorRecebido;
-            data = DateTime.Now;
+            DataTransacao = DateTime.Now;
         }
 
 
 
-        public void PagarAVista()
+        public override void Pagar()
         {
-            if (ValorCompra > ValorRecebido)
+
+            if (Valor > ValorRecebido)
             {
-                decimal diferenca = ValorCompra - ValorRecebido;
+                double diferenca = Valor - ValorRecebido;
                 Console.WriteLine("Valor não é suficiente para pagar, faltam: :( " + diferenca);
-                Efetuada = false;
+                Confirmacao = false;
               
             }
-            else if (ValorRecebido >= ValorCompra)
+            else if (ValorRecebido >= Valor)
             {
-                Desconto = (desconto * ValorCompra);
-                ValorFinal = ValorCompra - Desconto;
+                Desconto = (desconto * Valor);
+                ValorFinal = Valor - Desconto;
                 Troco = ValorRecebido - ValorFinal;
-                Efetuada = true;
+                Confirmacao = true;
                 Console.WriteLine("Valor Final com Desconto: " + ValorFinal);
                 Console.WriteLine("Teve um desconto de: " + Desconto);
                 Console.WriteLine($"Este é o troco, mas se  não quiser receber tudo bem :) {Troco} " );
 
             }
-
+            base.Pagar();
         }
 
 
 
 
-
+        
 
 
 

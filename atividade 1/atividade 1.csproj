@@ -6,4 +6,8 @@
     <RootNamespace>atividade_1</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Entidades\Pagamento.cs~RF5972c0fe.TMP" />
+  </ItemGroup>
+
 </Project>

@@ -2,33 +2,35 @@
 
 namespace atividade_1.Entidades
 {
-    public class Boleto
+    public class Boleto : Pagamento
     {
+       
+
+        public Boleto()
+        {
+        }
+
+        public Boleto(string cpf, double valor,   string descricao)
+        {
+           
+            Valor = valor;
+            Cpf = cpf;
+            Descricao = descricao;
+        }
+
         private const int DiasVencimento = 15;
         private const double Juros = 0.10;
         public Guid CodigoBarra { get; set; }
-        public double Valor { get; set; }
+        //public double Valor { get; set; }
         public DateTime DataEmissao { get; set; }
         public DateTime DataVencimento { get; set; }
         public DateTime DataPagamento { get; set; }
-        public bool Confirmacao { get; set; }
-        public string Cpf { get; set; }
+        //public bool Confirmacao { get; set; }
+        //public string Cpf { get; set; }
         public string Descricao { get; set; }
 
 
-        public Boleto(string cpf,
-                        double valor,
-                        string descricao)
-        {
-            Cpf = cpf;
-            Valor = valor;
-            Descricao = descricao;
-
-            DataEmissao = DateTime.Now;
-            Confirmacao = false;
-        }
-
-       
+    
         public void GerarBoleto()
         {
             CodigoBarra = Guid.NewGuid();
@@ -51,10 +53,11 @@ namespace atividade_1.Entidades
             Valor += taxa;
         }
 
-        public void Pagar()
+        public override void Pagar()
         {
             DataPagamento = DateTime.Now;
             Confirmacao = true;
+            base.Pagar();
         }
 
         
