@@ -295,8 +295,8 @@ namespace Girls.Gama2
             Console.WriteLine("Tvs com 15% de Desconto");
             Console.WriteLine("Geladeiras com 15% de Desconto e ainda descontamos 100 reais");
             Console.WriteLine("Corra! Aproveite!!!");
-            Console.WriteLine($"TV: {tv.PrecoProduto}, Quantidade Restante: {tv.EstoqueProduto}");
-            Console.WriteLine($"TV: {geladeira.PrecoProduto}, Quantidade Restante: {geladeira.EstoqueProduto}");
+            Console.WriteLine($"TV Preço: {tv.PrecoProduto}, Quantidade Restante: {tv.EstoqueProduto}");
+            Console.WriteLine($"Geladeira Preço: {geladeira.PrecoProduto}, Quantidade Restante: {geladeira.EstoqueProduto}");
             Console.WriteLine("Informe a opção que deseja: 1 - TV | 2 - Geladeira | 3 - Não deseja os Produtos em Promoção");
             int opcao = int.Parse(Console.ReadLine());
             if (opcao == 1)
